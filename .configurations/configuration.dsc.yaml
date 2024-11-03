@@ -9,7 +9,7 @@ properties:
         id: Git.Git
         source: winget
     - id: Google Chrome
-     resource: Microsoft.WinGet.DSC/WinGetPackage
+      resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Google Chrome
       settings:
