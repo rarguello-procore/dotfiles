@@ -15,6 +15,13 @@ properties:
       settings:
         id: Google.Chrome
         source: winget
+    - id: PuTTY
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install PuTTY
+      settings:
+        id: PuTTY.PuTTY
+        source: winget
     - id: Slack
       resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
