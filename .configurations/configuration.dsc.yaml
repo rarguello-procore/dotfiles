@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - id: Git
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Git
+      settings:
+        id: Git.Git
+        source: winget
+    - id: Google Chrome
+     resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Google Chrome
+      settings:
+        id: Google.Chrome
+        source: winget
+    - id: Slack
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Slack
+      settings:
+        id: SlackTechnologies.Slack
+        source: winget
+    - id: Visual Studio Code
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Visual Studio Code
+      settings:
+        id: Microsoft.VisualStudioCode
+        source: winget
+    - id: Zoom
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Zoom
+      settings:
+        id: Zoom.Zoom
+        source: winget
