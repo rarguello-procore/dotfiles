@@ -1,6 +1,27 @@
 # yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
 properties:
   resources:
+    - id: 7zip
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install 7zip
+      settings:
+        id: 7zip.7zip
+        source: winget
+    - id: AWS CLI
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install AWS CLI
+      settings:
+        id: Amazon.AWSCLI
+        source: winget
+    - id: Eclipse Temurin 17 JDK
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Eclipse Temurin JDK with Hotspot 17
+      settings:
+        id: EclipseAdoptium.Temurin.17.JDK
+        source: winget
     - id: Git
       resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
@@ -14,6 +35,20 @@ properties:
         description: Install Google Chrome
       settings:
         id: Google.Chrome
+        source: winget
+    - id: Kubernetes kubectl
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Kubernetes kubectl
+      settings:
+        id: Kubernetes.kubectl
+        source: winget
+    - id: Notepad++
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Notepad++
+      settings:
+        id: Notepad++.Notepad++
         source: winget
     - id: PuTTY
       resource: Microsoft.WinGet.DSC/WinGetPackage
