@@ -33,5 +33,5 @@ winget --configure enable
 ## Winget configuration
 
 ```powershell
-winget configure -f .configurations\configuration.dsc.yaml
+winget configure -f .\.configurations\configuration.dsc.yaml
 ```
